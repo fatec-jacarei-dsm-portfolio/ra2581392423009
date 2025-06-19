@@ -15,6 +15,16 @@ O portfólio é uma exigência curricular obrigatória, conforme as diretrizes d
 
 ---
 
+## Acesse meu Portfólio Online
+
+Você pode visualizar a versão online do meu portfólio pelo seguinte link:
+
+🔗 [Acessar Portfólio Digital](https://SEU-LINK-AQUI](https://fatec-jacarei-dsm-portfolio.github.io/ra2581392423009/)
+
+*(Substitua o link acima pelo endereço real do seu GitHub Pages ou da hospedagem institucional da Fatec)*
+
+---
+
 ## Projetos Apresentados
 
 ### 🌐 Censo Demográfico 2022 - Visualização de Setores Censitários
@@ -70,4 +80,3 @@ Este portfólio é um reflexo do meu aprendizado contínuo e da minha dedicaçã
 ---
 
 **© 2025 - Igor Lima - FATEC Jacareí - DSM**
-
