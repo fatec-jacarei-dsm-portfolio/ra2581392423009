@@ -15,6 +15,12 @@ O portfólio é uma exigência curricular obrigatória, conforme as diretrizes d
 
 ---
 
+## Acesse meu vídeo Online
+
+Você pode visualizar o vídeo do meu portfólio pelo seguinte link:
+
+🔗 [Acessar vídeo](https://youtu.be/ZdILescfOYE)
+
 
 
 ## Acesse meu Portfólio Online
