@@ -2,6 +2,18 @@ import type { Project } from '../types/project'
 
 export const projects: Project[] = [
     {
+  id: 'habit-tracker',
+  title: 'Habit Tracker',
+  subtitle: 'Aplicação para acompanhamento de hábitos',
+  description:
+    'Projeto desenvolvido para acompanhamento de hábitos e organização da rotina, com foco em interface simples, registro de progresso e experiência prática no desenvolvimento front-end.',
+  technologies: ['React', 'JavaScript', 'CSS', 'Frontend'],
+  cover: 'projects/habit-tracker.png',
+  githubUrl:
+    'https://github.com/IgorSantosL/Laboratorio_Desenvolvimento/tree/main/Atividade_2/habit-tracker',
+  publishedAt: '2026-03-18',
+},
+    {
   id: 'abp3',
   title: 'ABP3',
   subtitle: 'Projeto integrador desenvolvido em equipe',
