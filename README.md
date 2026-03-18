@@ -1,73 +1,103 @@
-# React + TypeScript + Vite
+# 💻 Portfólio de Projetos - Igor Lima
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 👤 Sobre mim
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Aluno:** Igor Santos Lima  
+**Curso:** Desenvolvimento de Software Multiplataforma (DSM)  
+**Instituição:** FATEC Jacareí  
 
-## React Compiler
+Sou apaixonado por tecnologia, automação e desenvolvimento de soluções que geram eficiência.  
+Atuo principalmente com:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🔁 RPA (Automação de Processos)
+- 🐍 Python para automações e integrações
+- 🌐 Desenvolvimento Web
+- 🔗 Integração com APIs
+- 📊 Manipulação de dados (Excel, PDF, banco de dados)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🌐 Acesse meu portfólio online
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+👉 **[Clique aqui para acessar o site](https://fatec-jacarei-dsm-portfolio.github.io/ra2581392423009/)**
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📁 Projetos desenvolvidos
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 📊 Censo Demográfico 2022
+Sistema de visualização de setores censitários com foco em interpretação de dados e navegação geográfica.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+🔗 GitHub:  
+https://github.com/IgorSantosL/DesenvolvimentoWeb2/tree/main/Atividade%208
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+### 🔁 Jornada Scrum
+Plataforma educativa sobre Scrum, com conteúdo interativo e foco em aprendizado prático.
+
+🔗 GitHub:  
+https://github.com/octacodeteam/ABP1
+
+---
+
+### 🔥 BDQueimadas (ABP2)
+Sistema para monitoramento de queimadas, com visualização de áreas afetadas e análise de risco.
+
+🔗 GitHub:  
+https://github.com/octacodeteam/ABP2
+
+---
+
+### 💰 Sistema Bancário
+Aplicação para gerenciamento de contas e investimentos, com foco em estrutura e regras de negócio.
+
+🔗 GitHub:  
+https://github.com/IgorSantosL/Sistema-Bancario/tree/main
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+- React + TypeScript
+- Vite
+- Framer Motion
+- CSS moderno (layout responsivo e dark theme)
+- JavaScript / Python
+- Automação com Selenium, Pandas, OpenPyXL
+
+---
+
+## 📬 Contato
+
+📧 Email: igors.lima12@gmail.com  
+📱 WhatsApp: +55 12 99784-8287  
+
+🔗 LinkedIn:  
+https://www.linkedin.com/in/igors-lima/
+
+🔗 GitHub:  
+https://github.com/IgorSantosL
+
+---
+
+## 📌 Sobre o projeto
+
+Este portfólio foi desenvolvido como parte do curso de Desenvolvimento de Software Multiplataforma da FATEC Jacareí, com o objetivo de apresentar de forma profissional e organizada os projetos desenvolvidos ao longo da graduação.
+
+A versão atual foi construída com foco em:
+
+- Interface moderna (dark mode)
+- Experiência do usuário
+- Escalabilidade (facilidade para adicionar novos projetos)
+- Organização e clareza das informações
+
+---
+
+## 🚀 Deploy
+
+O projeto está publicado utilizando **GitHub Pages**.
+
+---
