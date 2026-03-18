@@ -1,89 +1,73 @@
-# Portfólio de Projetos - Fatec Jacareí
-### Aluno: Igor Santos Lima
-### Curso: Desenvolvimento de Software Multiplataforma
-### Turma: 2o. Semestre de 2024
+# React + TypeScript + Vite
 
-# Portfólio Digital - Igor Lima
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Este é o meu portfólio digital desenvolvido para o curso de **Desenvolvimento de Software Multiplataforma (DSM)** na **FATEC Jacareí**.
+Currently, two official plugins are available:
 
-## Sobre o Portfólio
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-O objetivo deste portfólio é apresentar de forma clara e visual os projetos que desenvolvi ao longo da graduação, incluindo participações em projetos ABP e trabalhos realizados nas disciplinas do curso.
+## React Compiler
 
-O portfólio é uma exigência curricular obrigatória, conforme as diretrizes da FATEC Jacareí, e será utilizado como avaliação parcial ao longo dos semestres.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
----
+## Expanding the ESLint configuration
 
-## Acesse meu vídeo Online
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-Você pode visualizar o vídeo do meu portfólio pelo seguinte link:
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-🔗 [Acessar vídeo](https://youtu.be/ZdILescfOYE)
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
 
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
 
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-## Acesse meu Portfólio Online
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-Você pode visualizar a versão online do meu portfólio pelo seguinte link:
-
-🔗 [Acessar Portfólio Digital](https://fatec-jacarei-dsm-portfolio.github.io/ra2581392423009/)
-
-
----
-
-## Projetos Apresentados
-
-### 🌐 Censo Demográfico 2022 - Visualização de Setores Censitários
-
-Aplicação web utilizando React com TypeScript que permite visualizar setores censitários do Censo Demográfico 2022 para municípios do Estado de São Paulo.
-
-🔗 [Ver Projeto no GitHub](https://github.com/IgorSantosL/DesenvolvimentoWeb2/tree/main/Atividade%208)
-
----
-
-### 📚 ABP1 - Sistema Interativo de Aprendizado sobre Scrum
-
-Projeto educativo e interativo que ensina os conceitos, práticas e princípios do Scrum. Inclui módulos de aprendizagem, quizzes e emissão de certificados.
-
-🔗 [Ver Projeto no GitHub](https://github.com/octacodeteam/ABP1)
-
----
-
-### 🔥 ABP2 - Visualização de Dados do BDQueimadas
-
-Aplicação web que permite a visualização interativa de dados de área queimada, risco de fogo e focos de calor, utilizando dados da base BDQueimadas.
-
-🔗 [Ver Projeto no GitHub](https://github.com/octacodeteam/ABP2)
-
----
-
-### 💰 Sistema Bancário com Relatórios e Banco de Dados
-
-Aplicação web com backend conectado a banco de dados PostgreSQL, permitindo o controle de investimentos e geração de relatórios financeiros.
-
-🔗 [Ver Projeto no GitHub](https://github.com/IgorSantosL/Sistema-Bancario/tree/main)
-
----
-
-## Tecnologias Utilizadas
-
-- HTML5
-- CSS3
-- JavaScript
-- React com TypeScript
-- PostgreSQL (para o sistema bancário)
-- Node.js (para backend de alguns projetos)
-- API de Dados Públicos (para BDQueimadas)
-
----
-
-## Sobre Mim
-
-Sou estudante do curso de DSM na FATEC Jacareí, apaixonado por desenvolvimento web, banco de dados e soluções interativas.
-
-Este portfólio é um reflexo do meu aprendizado contínuo e da minha dedicação ao curso.
-
----
-
-**© 2025 - Igor Lima - FATEC Jacareí - DSM**
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
