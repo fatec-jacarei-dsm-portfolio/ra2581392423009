@@ -1,6 +1,17 @@
 import type { Project } from '../types/project'
 
 export const projects: Project[] = [
+    {
+  id: 'abp3',
+  title: 'ABP3',
+  subtitle: 'Projeto integrador desenvolvido em equipe',
+  description:
+    'Projeto desenvolvido no contexto acadêmico com foco em aplicação prática de desenvolvimento de software, organização em equipe e entrega de solução funcional. O repositório reúne a implementação e a evolução do projeto ao longo da disciplina.',
+  technologies: ['Desenvolvimento Web', 'Trabalho em Equipe', 'Projeto Integrador'],
+  cover: 'projects/abp3.png',
+  githubUrl: 'https://github.com/octacodeteam/ABP3',
+  publishedAt: '2026-01-05',
+},
   {
     id: 'censo-demografico-2022',
     title: 'Censo Demográfico 2022',
@@ -48,3 +59,4 @@ export const projects: Project[] = [
     publishedAt: '2025-03-01',
   },
 ]
+

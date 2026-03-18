@@ -392,6 +392,17 @@ textarea {
   gap: 22px;
 }
 
+.projects-toggle-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.projects-toggle-button {
+  min-width: 180px;
+  cursor: pointer;
+}
+
 .project-card {
   overflow: hidden;
   border-radius: 24px;
