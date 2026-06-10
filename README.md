@@ -12,7 +12,7 @@ https://fatec-jacarei-dsm-portfolio.github.io/ra2581392423009/
 
 O espaço abaixo já está preparado para o vídeo solicitado na avaliação. Após gravar e publicar o vídeo, substitua o link temporário pelo link final do YouTube ou da plataforma escolhida.
 
-Link do vídeo: https://youtu.be/INSERIR_LINK_DO_VIDEO_AQUI
+Link do vídeo: https://youtu.be/INSERIR_LINK_DO_VIDEO_AQU
 
 ## Sobre mim
 
