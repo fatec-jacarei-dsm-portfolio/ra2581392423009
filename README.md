@@ -11,7 +11,7 @@ https://fatec-jacarei-dsm-portfolio.github.io/ra2581392423009/
 ## Vídeo de apresentação
 
 
-Link do vídeo: 
+Link do vídeo: https://youtu.be/SUYdxkLx9jk
 
 ## Sobre mim
 
